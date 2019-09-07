@@ -1,0 +1,85 @@
+ {% load static %}
+ body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+     // cursor: url('/static/media/download.png'), default;
+
+}
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    background-image:url('/static/media/night_sky.jpg');
+   // background-size:cover;
+    height:100%;
+
+  }
+
+
+  .container-fluid {
+      padding-top: 50px;
+      padding-bottom:50px;
+  }
+
+
+  .custom-con {
+  border-style:solid;
+  border-color:#ffffff80;
+  height:100%;
+  border-width:thin;
+  }
+
+  .special-hr
+  {
+    width:50%;
+
+  }
+.ic {
+font-size:160%;
+ background-color: transparent;
+  border-color: #ccc;
+  color:#fff;
+
+}
+  .custom-btn{
+    background-color: transparent;
+  border-color: #ccc;
+  }
+
+  .custom-btn:hover {
+  color:black;
+  background:#ffffff40;
+  }
+  .content {
+  margin-top : 60px;
+  }
+
+  .footer-content-1 {
+    position: absolute;
+    /* position: absolute; */
+    /* bottom: 100px; */
+    align-content: center;
+    bottom: 70;
+     margin: 0 auto;
+}
+
+
+.circle {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin: -50px 0 0 -50px;
+  background: #ffffff;
+  border-radius: 80%;
+  backface-visibility: hidden;
+  visibility:hidden;
+  z-index:1;
+  -webkit-filter: blur(20px);
+-moz-filter: blur(20px);
+-ms-filter: blur(20px);
+-o-filter: blur(20px);
+filter: blur(20px);
+}
