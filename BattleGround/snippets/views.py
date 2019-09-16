@@ -27,13 +27,13 @@ def index(request):
         rectangle_data.append({"name": rectangle.name,
                                "length": rectangle.length,
                                "breadth":rectangle.breadth,
-                                "x_coordintate": rectangle.x_coordinate,
+                                "x_coordinate": rectangle.x_coordinate,
                                 "y_coordinate": rectangle.y_coordinate,
                                 "z_coordinate": rectangle.z_coordinate,
                                 "texID": rectangle.texID,
                                 "mass": rectangle.mass,
                                 "orientation":rectangle.orientation})
-    data = [{"cube": [cube_data],"rectangle": [rectangle_data]}]
+    data = [{"cube": cube_data,"rectangle": rectangle_data}]
     return Response(data)
 
 def download(request):
@@ -54,13 +54,13 @@ def download(request):
         rectangle_data.append({"name": rectangle.name,
                                "length": rectangle.length,
                                "breadth": rectangle.breadth,
-                               "x_coordintate": rectangle.x_coordinate,
+                               "x_coordinate": rectangle.x_coordinate,
                                "y_coordinate": rectangle.y_coordinate,
                                "z_coordinate": rectangle.z_coordinate,
                                "texID": rectangle.texID,
                                "mass": rectangle.mass,
                                "orientation": rectangle.orientation})
-    data = [{"cube": [cube_data], "rectangle": [rectangle_data]}]
+    data = [{"cube": cube_data, "rectangle": rectangle_data}]
     file_path =  os.path.join(settings.MEDIA_ROOT, "res.json")
     with open(file_path, "w") as f:
         f.write(json.dumps(data))
